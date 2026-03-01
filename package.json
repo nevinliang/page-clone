@@ -1,0 +1,31 @@
+{
+  "name": "page-clone",
+  "version": "0.1.0",
+  "description": "Clone web pages for AI agent testing with mocked backends",
+  "type": "module",
+  "bin": {
+    "page-clone": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "openai": "^4.52.0",
+    "ora": "^8.0.1",
+    "playwright": "^1.45.0",
+    "single-file-cli": "^2.0.83"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.0"
+  }
+}
